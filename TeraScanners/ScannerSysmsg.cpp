@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 
-const char* const OUTPUT_FILE = "sysmsgs.txt";
+const char* const OUTPUT_FILE = "sysmsg.map";
 
 const unsigned char SEARCH_SIGNATURE[] = {
   0x55,             // push ebp
@@ -77,7 +77,7 @@ void ScannerSysmsg::scan(unsigned char* buf, size_t size, uint32_t offset) {
       std::wstring wsStr(wszStr);
       std::string sStr(wsStr.begin(), wsStr.end());
       
-      fOutput << ConvertCase(sStr) << " " << i << std::endl;
+      fOutput << sStr << " " << i << std::endl;
     }
     
     fOutput.close();

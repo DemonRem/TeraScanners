@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 const char* DLL_NAME = "OpcodeDll.dll";
-const char* const OUTPUT_FILE = "opcodes.txt";
+const char* const OUTPUT_FILE = "protocol.map";
 
 const unsigned char SEARCH_SIGNATURE[] = {
   0x55,                         // push ebp

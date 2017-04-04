@@ -50,7 +50,7 @@ DWORD WINAPI Thread(LPVOID lpParameter) {
     }
     
     if (pName != NULL && strcmp(pName, "") != 0) {
-      fOutput << ConvertCase(std::string(pName)) << " " << i << std::endl;
+      fOutput << pName << " " << i << std::endl;
     }
   }
   
